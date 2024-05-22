@@ -12,12 +12,12 @@ int main() {
 }
 
 void LeerPregunta() {
-    char pregunta[50];  // Definir un buffer para almacenar la q
+    char pregunta[300];  // Definir un buffer para almacenar la q
     int Operando1, Operando2;
     char Operador;
 
     // Solicitar la operación al usuario
-    printf("Ingrese la operación en el formato 'Operando1 Operador Operando2': ");
+    printf("Usar el formato 'Núm1 Operador Núm2' \n(dejar un espacio entre cada uno, ej: 1 + 1)\nSuma +\nResta -\nMultiplicación *\nDivisión /\nIngrese la operación: ");
     fgets(pregunta, sizeof(pregunta), stdin);  // Leer la pregunta desde la entrada estándar
 
     // Utilizar strtok para separar la pregunta en elementos

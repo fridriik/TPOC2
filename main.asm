@@ -4,18 +4,18 @@ section .text
 
 recibir_Operacion:
     ; Recibe los 3 parámetros
-    mov eax, [esp + 4]     ; Primer operando
-    mov ebx, [esp + 8]     ; Operador
-    mov ecx, [esp + 12]    ; Segundo operando
+    mov eax, dword [esp + 4]     ; Primer operando
+    movzx ebx, byte [esp + 8]    ; Operador
+    mov ecx, dword [esp + 12]    ; Segundo operando
 
     ; Chequea qué cálculo debe realizar
-    cmp byte [ebx], '+'
+    cmp bl, '+'  ; Compara el operador como byte
     je sum
-    cmp byte [ebx], '-'
+    cmp bl, '-'  ; Compara el operador como byte
     je res
-    cmp byte [ebx], '*'
+    cmp bl, '*'  ; Compara el operador como byte
     je mul
-    cmp byte [ebx], '/'
+    cmp bl, '/'  ; Compara el operador como byte
     je div
     jmp error
 
