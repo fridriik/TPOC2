@@ -4,7 +4,7 @@
 
 En este proyecto se desarrolló una calculadora que integra código ensamblador y C. La finalidad fue profundizar en la interacción entre ambos lenguajes, comprendiendo cómo el ensamblador maneja las operaciones aritméticas básicas y cómo se comunica con C para procesar y mostrar los resultados.
 
-## Detalles del Código
+## Desarrollo
 En el archivo main.asm, se definieron las operaciones aritméticas básicas y el manejo de errores. Cada operación (suma, resta, multiplicación y división) se implementó utilizando instrucciones específicas del procesador. A continuación, se describen los puntos clave:
 
 * Suma: Se realizó con la instrucción add.
